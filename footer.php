@@ -19,7 +19,7 @@
             <div class="cd-subscribe-top">
                 <h3><?php the_field('instragram-headline', 'option') ; ?></h3>
             </div>
-            <a href="<?php the_field('link-to-insta', 'option') ; ?>" target="_blank">Follow us on instagram</a>
+            <a href="<?php the_field('link-to-insta', 'option') ; ?>" target="_blank"><?php the_field('instagram-button-text') ; ?></a>
         </div>
     </div>
     <footer>

@@ -5,7 +5,7 @@
 
     <section class="cd-section cd-home-top cd-max-width">
         <div class="cd-section-left">
-            <?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1)); ?>
+            <?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 8)); ?>
             <?php if ( $loop->have_posts() ) : ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post();
                     $categories = get_the_category();
@@ -16,6 +16,7 @@
                                 <iframe src="<?php the_field('iframe-source') ; ?>?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                             <?php endif ; ?>
                         </div>
+                        <h2 class="cd-highlight-headline"><?php the_title() ; ?></h2>
                         </div>
                         <?php
                     }
@@ -74,11 +75,11 @@
                     }
                     $count++;
                 ?>
-
                 <?php endwhile; ?>
-
+                <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="8" offset="8" pause="true" scroll="false" images_loaded="true" button_label="More Posts" button_loading_label="Loading posts..."]') ; ?>
+                <?php wp_reset_query(); ?>
             <?php endif; ?>
-            <?php wp_reset_query(); ?>
+
             </div>
             </section>
     <section>

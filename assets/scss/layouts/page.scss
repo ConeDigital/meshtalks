@@ -29,7 +29,29 @@
       font-size: 13px;
     }
   }
+
 }
+
+.alm-btn-wrap{
+
+  .alm-load-more-btn{
+    display: block;
+    margin: 50px auto 0;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: normal;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+
+  .done{
+    display: none;
+  }
+}
+
+
 
 .cd-home-border{
   height: 1px;
@@ -187,6 +209,14 @@
 
     @include breakpoint(small) {
       font-size: 30px;
+    }
+  }
+
+  .cd-highlight-headline{
+    margin: 20px 0;
+
+    @include breakpoint(small) {
+      font-size: 20px;
     }
   }
 

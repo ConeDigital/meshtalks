@@ -36,6 +36,9 @@ header{
     border-bottom: 1px solid #ddd;
   }
 
+  li{
+    list-style: none;
+  }
 
   ul{
     display: flex;
@@ -66,7 +69,9 @@ header{
         padding: 8px;
       }
       @include breakpoint(mobile) {
-        font-size: 10px;
+        font-size: 11px;
+        padding: 8px 5px;
+        text-transform: none;
       }
 
       &:hover{
@@ -75,10 +80,18 @@ header{
     }
   }
 
+  #menu-secondary-menu{
+    justify-content: flex-end;
+  }
+
   .cd-title-link{
     a{
+      font-weight: 600;
+      margin: 0;
+      display: block;
+      text-transform: uppercase;
       color: #fd0807;
-      text-decoration: none !important;
+      text-decoration: none!important;
       font-size: 38px;
       position: relative;
       padding: 8px 28px;
@@ -124,7 +137,7 @@ header{
 .cd-header-content{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   @include breakpoint(medium) {
     justify-content: center;
@@ -135,6 +148,10 @@ header{
     height: 25px;
     color: #ff0002;
   }
+}
+
+.menu-primary-menu-container, .menu-secondary-menu-container{
+  width: 100%;
 }
 
 .cd-header-side-links{

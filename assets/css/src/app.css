@@ -460,6 +460,8 @@ header h1 {
     .cd-header {
       top: 100px;
       border-bottom: 1px solid #ddd; } }
+  .cd-header li {
+    list-style: none; }
   .cd-header ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -494,10 +496,21 @@ header h1 {
           padding: 8px; } }
       @media (max-width: 500px) {
         .cd-header ul a {
-          font-size: 10px; } }
+          font-size: 11px;
+          padding: 8px 5px;
+          text-transform: none; } }
       .cd-header ul a:hover {
         text-decoration: underline; }
+  .cd-header #menu-secondary-menu {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .cd-header .cd-title-link a {
+    font-weight: 600;
+    margin: 0;
+    display: block;
+    text-transform: uppercase;
     color: #fd0807;
     text-decoration: none !important;
     font-size: 38px;
@@ -537,10 +550,10 @@ header h1 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (max-width: 800px) {
     .cd-header-content {
       -webkit-box-pack: center;
@@ -551,6 +564,9 @@ header h1 {
     width: 25px !important;
     height: 25px;
     color: #ff0002; }
+
+.menu-primary-menu-container, .menu-secondary-menu-container {
+  width: 100%; }
 
 .cd-header-side-links {
   width: 100px;
@@ -768,6 +784,20 @@ footer {
       .cd-home-top-grid p {
         font-size: 13px; } }
 
+.alm-btn-wrap .alm-load-more-btn {
+  display: block;
+  margin: 50px auto 0;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  border: none;
+  padding: 15px 30px;
+  font-size: 14px; }
+
+.alm-btn-wrap .done {
+  display: none; }
+
 .cd-home-border {
   height: 1px;
   background: #ddd;
@@ -916,6 +946,11 @@ footer {
     @media (max-width: 600px) {
       .cd-section-left h2 {
         font-size: 30px; } }
+  .cd-section-left .cd-highlight-headline {
+    margin: 20px 0; }
+    @media (max-width: 600px) {
+      .cd-section-left .cd-highlight-headline {
+        font-size: 20px; } }
   .cd-section-left p {
     font-size: 18px;
     text-align: center; }

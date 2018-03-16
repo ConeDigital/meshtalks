@@ -32,7 +32,13 @@
 <!--                <a class="cd-header-side-links" target="_blank" href="https://www.instagram.com/trans_94/?hl=sv">-->
 <!--                    <img src="--><?php //echo esc_url(home_url( '/wp-content/themes/meshtalks/assets/images/trans94.png' ) ); ?><!--">-->
 <!--                </a>-->
+                <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => '' ) ); ?>
+                    <li class="cd-title-link">
+                        <a href="<?php echo esc_url(home_url()); ?>">mesh</a>
+
+                    </li>
                 <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '' ) ); ?>
+
 <!--                <a class="cd-header-side-links" target="_blank" href="https://www.youtube.com/user/RMHSWEDEN">-->
 <!--                    <span>*MESH TV</span>-->
 <!--                </a>-->
