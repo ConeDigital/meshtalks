@@ -444,7 +444,7 @@ header h1 {
 
 .cd-header-logo {
   position: relative;
-  height: 150px; }
+  height: 210px; }
   @media (max-width: 900px) {
     .cd-header-logo {
       height: 100px; } }
@@ -452,7 +452,7 @@ header h1 {
 .cd-header {
   position: absolute;
   left: 0;
-  top: 150px;
+  top: 210px;
   right: 0;
   background: white;
   z-index: 10; }
@@ -824,7 +824,8 @@ footer {
 .cd-grid-post-card {
   width: -webkit-calc(25% - 30px);
   width: calc(25% - 30px);
-  margin: 15px; }
+  margin: 15px;
+  position: relative; }
   @media (max-width: 900px) {
     .cd-grid-post-card {
       width: -webkit-calc(33.3% - 30px);
@@ -952,8 +953,7 @@ footer {
       .cd-section-left .cd-highlight-headline {
         font-size: 20px; } }
   .cd-section-left p {
-    font-size: 18px;
-    text-align: center; }
+    font-size: 18px; }
 
 .cd-single-title-share {
   display: -webkit-box;

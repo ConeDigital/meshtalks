@@ -76,6 +76,7 @@
 .cd-grid-post-card{
   width: calc(25% - 30px);
   margin: 15px;
+  position: relative;
 
   @include breakpoint(laptop) {
     width: calc(33.3% - 30px);
@@ -222,7 +223,6 @@
 
   p{
     font-size: 18px;
-    text-align: center;
   }
 }
 
