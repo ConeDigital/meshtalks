@@ -25,7 +25,7 @@
                         <div class="cd-section-right cd-home-section-right">
                             <div class="cd-home-top-grid">
                                 <a class="cd-absolute-link" href="<?php the_permalink() ; ?>"></a>
-                                <img src="<?php the_post_thumbnail_url(); ?>">
+                                <div class="cd-background-img cd-home-top-right-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>')"></div>
                                 <h4><?php echo esc_html( $categories[0]->name ); ?> </h4>
                                 <p><?php the_title(); ?></p>
                             </div>
@@ -35,7 +35,7 @@
                         ?>
                         <div class="cd-home-top-grid">
                             <a class="cd-absolute-link" href="<?php the_permalink() ; ?>"></a>
-                            <img src="<?php the_post_thumbnail_url(); ?>">
+                            <div class="cd-background-img cd-home-top-right-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>')"></div>
                             <h4><?php echo esc_html( $categories[0]->name ); ?> </h4>
                             <p><?php the_title(); ?></p>
                         </div>
@@ -53,7 +53,7 @@
                             <div class="cd-post-card-content">
                                 <h5><?php echo esc_html( $categories[0]->name ); ?> </h5>
                                 <h3><?php the_title() ; ?></h3>
-                                <div><span><?php echo get_the_date() ; ?></span></div>
+                                <div><span>By <?php the_author() ; ?></span> / <span><?php echo get_the_date() ; ?></span></div>
                                 <p><?php the_excerpt() ; ?></p>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                             <div class="cd-post-card-content">
                                 <h5><?php echo esc_html( $categories[0]->name ); ?> </h5>
                                 <h3><?php the_title() ; ?></h3>
-                                <div><span><?php echo get_the_date() ; ?></span></div>
+                                <div><span>By <?php the_author() ; ?></span> / <span><?php echo get_the_date() ; ?></span></div>
                                 <p><?php the_excerpt() ; ?></p>
                             </div>
                         </div>

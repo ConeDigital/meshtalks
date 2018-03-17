@@ -5,6 +5,7 @@
   position: relative;
 
   @include breakpoint(laptop) {
+    width: 100%;
     &:first-child{
       margin-right: 30px;
     }
@@ -30,6 +31,10 @@
     }
   }
 
+}
+.cd-home-top-right-img{
+  height: 23vw;
+  max-height: 220px;
 }
 
 .alm-btn-wrap{

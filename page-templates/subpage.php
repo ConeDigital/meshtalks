@@ -39,7 +39,7 @@
                     <div class="cd-post-card-content">
                         <h5><?php echo esc_html( $categories[0]->name ); ?> </h5>
                         <h3><?php the_title() ; ?></h3>
-                        <div><span><?php echo get_the_date() ; ?></span></div>
+                        <div><span>By <?php the_author() ; ?></span> / <span><?php echo get_the_date() ; ?></span></div>
                         <p><?php the_excerpt() ; ?></p>
                     </div>
                 </div>

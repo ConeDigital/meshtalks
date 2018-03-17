@@ -768,8 +768,10 @@ footer {
   margin-bottom: 30px;
   position: relative; }
   @media (max-width: 900px) {
-    .cd-home-top-grid:first-child {
-      margin-right: 30px; } }
+    .cd-home-top-grid {
+      width: 100%; }
+      .cd-home-top-grid:first-child {
+        margin-right: 30px; } }
   @media (max-width: 700px) {
     .cd-home-top-grid:first-child {
       margin-right: 15px; } }
@@ -783,6 +785,10 @@ footer {
     @media (max-width: 700px) {
       .cd-home-top-grid p {
         font-size: 13px; } }
+
+.cd-home-top-right-img {
+  height: 23vw;
+  max-height: 220px; }
 
 .alm-btn-wrap .alm-load-more-btn {
   display: block;
