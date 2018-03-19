@@ -899,7 +899,8 @@ footer {
   .cd-post-card p {
     font-size: 15px;
     line-height: 1.4em;
-    color: #333; }
+    color: #333;
+    font-weight: normal; }
     @media (max-width: 900px) {
       .cd-post-card p {
         display: none; } }
@@ -959,7 +960,8 @@ footer {
       .cd-section-left .cd-highlight-headline {
         font-size: 20px; } }
   .cd-section-left p {
-    font-size: 18px; }
+    font-size: 18px;
+    font-weight: normal; }
 
 .cd-single-title-share {
   display: -webkit-box;
