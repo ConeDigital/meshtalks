@@ -98,6 +98,11 @@
     font-weight: 500;
     margin: 0 0 10px;
   }
+
+  h3{
+    margin: 10px 0;
+    font-size: 16px;
+  }
 }
 
 .cd-grid-post-card-img{
@@ -224,6 +229,10 @@
 
     @include breakpoint(small) {
       font-size: 20px;
+    }
+
+    a{
+      color: black;
     }
   }
 

@@ -16,7 +16,7 @@
                                 <iframe src="<?php the_field('iframe-source') ; ?>?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                             <?php endif ; ?>
                         </div>
-                        <h2 class="cd-highlight-headline"><?php the_title() ; ?></h2>
+                        <h2 class="cd-highlight-headline"><a href="<?php the_permalink() ; ?>"><?php the_title() ; ?></a></h2>
                         </div>
                         <?php
                     }

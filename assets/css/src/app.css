@@ -846,6 +846,9 @@ footer {
     font-size: 14px;
     font-weight: 500;
     margin: 0 0 10px; }
+  .cd-grid-post-card h3 {
+    margin: 10px 0;
+    font-size: 16px; }
 
 .cd-grid-post-card-img {
   height: 12vw;
@@ -959,6 +962,8 @@ footer {
     @media (max-width: 600px) {
       .cd-section-left .cd-highlight-headline {
         font-size: 20px; } }
+    .cd-section-left .cd-highlight-headline a {
+      color: black; }
   .cd-section-left p {
     font-size: 18px;
     font-weight: normal; }

@@ -18,6 +18,7 @@ $pageTitle = get_the_title();
                     <a href="<?php the_permalink() ; ?>" class="cd-absolute-link"></a>
                     <h5><?php echo esc_html( $categories[0]->name ); ?> </h5>
                     <div class="cd-grid-post-card-img cd-background-img" style="background-image: url('<?php the_post_thumbnail_url() ; ?>')"></div>
+                    <h3><?php the_title() ; ?></h3>
                 </div>
             <?php endwhile; ?>
         <?php endif; ?>
