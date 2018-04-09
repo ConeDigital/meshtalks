@@ -29,9 +29,9 @@
         </div>
         <div class="cd-header cd-max-width cd-large-width">
             <div class="cd-header-content">
-<!--                <a class="cd-header-side-links" target="_blank" href="https://www.instagram.com/trans_94/?hl=sv">-->
-<!--                    <img src="--><?php //echo esc_url(home_url( '/wp-content/themes/meshtalks/assets/images/trans94.png' ) ); ?><!--">-->
-<!--                </a>-->
+                <a class="cd-header-side-links" target="_blank" href="http://trans94.wpengine.com/">
+                    <img src="<?php echo esc_url(home_url( '/wp-content/themes/meshtalks/assets/images/trans94.png' ) ); ?>">
+                </a>
                 <?php wp_nav_menu( array( 'theme_location' => 'secondary', 'menu_class' => '' ) ); ?>
                     <li class="cd-title-link">
                         <a href="<?php echo esc_url(home_url()); ?>">mesh</a>

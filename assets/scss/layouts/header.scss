@@ -155,12 +155,19 @@ header{
 }
 
 .cd-header-side-links{
-  width: 100px;
   display: flex;
   align-items: flex-start;
   padding: 5px 10px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: max-content;
+  width: 7vw;
 
-  @include breakpoint(medium) {
+  @include breakpoint(xl) {
     display: none;
   }
 

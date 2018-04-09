@@ -569,7 +569,6 @@ header h1 {
   width: 100%; }
 
 .cd-header-side-links {
-  width: 100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -578,8 +577,18 @@ header h1 {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 5px 10px; }
-  @media (max-width: 800px) {
+  padding: 5px 10px;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 7vw; }
+  @media (max-width: 1100px) {
     .cd-header-side-links {
       display: none; } }
   .cd-header-side-links:last-child {
